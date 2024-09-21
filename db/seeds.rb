@@ -6,7 +6,7 @@ Category.destroy_all
 Event.destroy_all
 
 # Create some sample users
-admin_user = User.create!(name: 'admin', email: 'admin@gmail.com', password: 'adminadmin', role: 'admin')
+admin_user = User.create!(name: 'admin', email: 'admin@gmail.com', password: 'adminadmin', email_verified: true, role: 'admin')
 puts "Admin user created!"
 
 # Create sample categories
